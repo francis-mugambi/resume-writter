@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+</head>
+<body>
+    <!-- <h1 style="text-align: center;border-bottom: 2px solid black;">Resume Template</h1> -->
+    <!-- <h2>Sections</h2>
+    <h3>Personal Details</h3>
+        First Name: <input type="text">
+        last Name: <input type="text">
+        Tittle: <input type="text">
+        Photo: <input type="text">        
+    <h3>Social network</h3>
+    <form action="" method="post">
+        Email: <input type="text">
+        Phone: <input type="text">
+        LinkedIn: <input type="text">
+        GithHub: <input type="text">
+        Portfolio: <input type="text">
+    </form>
+    <h3>Skills</h3>
+    <form action="" method="post">
+        Professional Skills: <input type="text">
+        Soft Skills: <input type="text">        
+    </form>
+    <h3>Interests</h3>
+    <form action="" method="post">
+        Interests: <input type="text">            
+    </form>
+    <h3>Career Profile</h3>
+    <form action="" method="post">
+        career Profile: <input type="text">            
+    </form>
+    <h3>Education</h3>
+    <form action="" method="post">
+        Course: <input type="text">            
+        School: <input type="text"> 
+        From: <input type="text"> 
+        To: <input type="text"> 
+    </form>
+    <h3>Experiences</h3>
+    <form action="" method="post">
+        Role: <input type="text"> 
+        company name: <input type="text"> 
+        From: <input type="text"> 
+        To: <input type="text"> 
+        Role: <input type="text"> 
+    </form> -->
+    <style>
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .clearfix{
+            box-sizing: border-box;
+        }
+    </style>
+     <h2>template 2 <span type="submit"><a href="{% url 'resumepdf' 2 %}">Download</a></span></h2> 
+    <div class="clearfix" style="max-width: 800px; border: solid 1px black;">
+        <div style="background-color: rgb(73, 67, 67);color: white; width: 25%;height: 99vh; float: right; padding-left: 10px;">
+            <h2>Francis Mugambi</h2>
+            <h4>Back End Developer</h4>
+            
+            <p>francismugambi97@gmail.com</p>
+            <p>+254706046810</p>
+            <p>francis-mugambi.me.ke</p>
+            <p>linkedin.com/in/francis-mugambi</p>
+            <p>github.com/francis-mugambi</p>
+
+            <h2>SKILLS</h2>           
+            <p>HTML, CSS, Bootstrap, React</p>
+            <p>Python, PHP, Ruby, JavaScript</p>
+            <p>Django, Rails</p>
+            <p>MYSQL, Oracle</p>
+            <p>API's, Docker, OOP, Agile, SEO</p>
+            <p>Git & Github</p>
+
+            <h2>SOFT SKILLS</h2>
+            <p>Strong Analytical skills</p>
+            <p>Ability To work effectively in a team</p>
+            <p>Detail-oriented</p>
+            <p>Excellent time management</p>
+            <p>Strong written and verbal communication</p>
+
+        </div>
+        <div style="width: 70%; float: right; padding-left: 20px;">
+            <h2>Career Profile</h2>
+            <p>Francis Mugambi is an entry-level Back-end developer with a strong passion for
+                using technology to solve problems. He is proficient in Python, PHP programming
+                languages, MYSQL database and Django framework. He is eager to continue
+                learning and growing as a web developer. He enjoys staying up to date with the
+                latest technology trends. He is team player and is excited to contribute his skills
+                and knowledge to any project.
+            </p>
+            <h2>Experiences</h2>
+            <p>Full Stack Developer, Feb 2023 - present</p>
+            <p>Technical University of Mombasa Catholic Community</p>
+            <p>
+                <ul>
+                    <li>Developing and maintaining the voting system.</li>
+                    <li>Designing and developing the members registration portal.</li>
+                    <li> Creating and maintaining members details API .</li>
+                    <li> Checking and fixing emerging bugs of the website .</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <button type="submit"><a href="{% url 'resumepdf' 2   %}">Download</a></button>
+</body>
+</html>
